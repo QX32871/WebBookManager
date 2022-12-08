@@ -29,6 +29,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * 修改密码
+     * @param username  表单中的username
+     * @param password  表单中的password
+     */
     @Override
     public void changePassword(String username, String password) {
         try (SqlSession sqlSession = MybatisUtil.getSession()) {
